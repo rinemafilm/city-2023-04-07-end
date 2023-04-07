@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans+KR:wght@100;400;700&display=swap');
+/* font-family: 'Days One', sans-serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.header .gnb {
+    display: flex;
+}
+
+.header .gnb li a {
+    display: block;
+    padding: 20px 55px;
+}
+
+.header .gnb li a:hover {
+    color: rgb(150, 150, 240);
+}
+
+.header button {
+    margin-left: 55px;
+    padding: 9px 22px;
+    border: 1px solid #222;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: transparent;
+    color: #222;
+}
+
+
+.header .logo {
+    margin-right: auto;
+    font-family: 'Days One', sans-serif;
+    font-size: 36px;
+    color: #4B4B4B;
+}
+
+/* slide */
+.slide {
+    position: relative;
+}
+
+.slide .item {
+    height: 650px;
+    background-image: url('../images/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide .textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.slide .textbox h3 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.slide .textbox h2 {
+    color: black;
+    font-size: 96px;
+    font-family: 'Days One', sans-serif;
+}
+
+.slide .textbox p {
+    width: 57%;
+    margin: 0 auto;
+    color: #666;
+}
+
+.slide .slide_btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 30px;
+}
+
+.slide .slide_btn img {
+    width: 46px;
+    cursor: pointer;
+}
+
+/* container / main / contents */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section_01 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 135px;
+    color: #3A3A3A;
+}
+
+.section_01 .textbox {
+    flex: 1;
+    height: 500px;
+    padding: 63px 30px;
+}
+
+.section_01 .textbox h2 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.section_01 .textbox p {
+    margin: 20px 0 70px;
+}
+
+
+.section_01 .btns button {
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.section_01 .banner {
+    flex: 1;
+    height: 500px;
+}
+
+.section_02 {
+    margin-top: 135px;
+}
+
+.section_02 .section_header {
+    position: relative;
+    background-color: darkgoldenrod;
+    margin-bottom: 30px;
+}
+
+.section_02 .section_header .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
